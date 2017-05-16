@@ -1,5 +1,6 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'microfonia/bortolotti.css' %}" type="text/css" charset="utf-8">
+<script src="https://use.fontawesome.com/e09838e29b.js"></script>
 
 <body class=fundocinza>
 	<div class="fundopreto">
@@ -9,16 +10,18 @@
 			<h3> 31 de fevereiro de 2018 </h3>
 		</div>
 
+
 		<div id="video">
 		</div>
+
 
 		<div id="compartilhe">
 			<text>COMPARTILHE</text>
 			<text id="todos">VER TODOS</text>
 			<ul>
-				<li>f
-				<li>t
-				<li>G
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
 			</ul>
 			<hr class="linhacinza">
 		<div>
@@ -49,10 +52,8 @@
 			<div id="desc-dir">
 				<div id="vid-rel">
 					VIDEOS RELACIONADOS
-					<div class="thumb-rel">
-					</div>
-					<div class="thumb-rel">
-					</div>
+					<img src="{% static 'microfonia/img/thumbnail.jpg' %}" alt="thumbnail" class="thumb-rel">
+					<img src="{% static 'microfonia/img/thumbnail2.jpg' %}" alt="thumbnail" class="thumb-rel">
 				</div>
 			</div>
 		</div>

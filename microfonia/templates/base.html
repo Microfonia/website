@@ -1,0 +1,19 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'microfonia/template.css' %}" type="text/css" charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+{% block css %} CSS ESPECIFICO AQUI {% endblock %}
+<script src="https://use.fontawesome.com/e09838e29b.js"></script>
+
+
+
+<body class="bg-format fundocinza">
+	<div class="conteudo-format fundopreto">
+
+		
+		{% block conteudo %}
+		TESTE
+		{% endblock %}
+
+	</div>
+</body>

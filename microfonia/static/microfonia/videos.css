@@ -1,16 +1,11 @@
-.main h1 {
-  font-family: 'Raleway';
-  font-weight: bold;
-  font-size: 63px;
-}
+
 
 #capa-serie{
   border-radius: 8px;
   border: 2px solid white;
-  max-width: 700px;
-  height: 400px;
-  margin-left: 50px;
-
+  width: 610px;
+  height: auto;
+  margin: 40px auto;
 }
 
 .section .container {
@@ -20,15 +15,19 @@
   
 }
 
+body .container {
+  width: 640px;
+}
+
 .container h3{
   font-family: 'Raleway';
   font-weight: bold;
   text-align: center;
 }
+
 .container img{
     height: 200px;
-    margin-left: 110px;
-    margin-top: 30px;
+    margin: 0;
     
 }
 

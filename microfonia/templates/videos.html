@@ -1,15 +1,17 @@
+
+{% extends "base.html" %}
+
 {% load static %}
-<link rel="stylesheet" href="{% static 'microfonia/david.css' %}" type="text/css" charset="utf-8">
-<script src="https://use.fontawesome.com/e09838e29b.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-										<!-- TÍTULO-->
-<body id="fundocinza">
-	<div id="fundopreto">
+{% block css %}<link rel="stylesheet" href="{% static 'microfonia/videos.css' %}" type="text/css" charset="utf-8"> {% endblock %}
 
+{% block conteudo %}
+		
+
+									<!-- TÍTULO -->
 		<div class="main">
 			<div class="container">
-				<h1 class="fonte-titulo">MICROFONIA PRODUÇÕES</h1>
+				<h1 class="fonte-titulo size-principal aligncenter">MICROFONIA PRODUÇÕES</h1>
 				<img id="capa-serie" src="https://i.ytimg.com/vi/UPt5-Kr0GCM/maxresdefault.jpg"/>
 			</div>
 		</div>
@@ -99,8 +101,4 @@
 			</div>
 		</div>
 
-
-
-	</div>
-</body>
-
+{% endblock %}

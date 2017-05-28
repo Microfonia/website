@@ -1,0 +1,82 @@
+@font-face {
+  	font-family: 'Raleway';
+  	src: url('/static/microfonia/fonts/Raleway-Bold.ttf');
+  	font-weight: normal;
+}
+
+@font-face {
+  	font-family: 'Raleway';
+  	src: url('/static/microfonia/fonts/Raleway-Black.ttf');
+  	font-size: 1em;
+  	font-weight: bold;
+}
+
+
+.aligncenter {
+	text-align: center;
+}
+.fundocinza {
+	background-color: #222;
+
+}
+
+.fundopreto {
+	background-color: #000;
+}
+
+.bg-format {
+	height: 100%;
+	position: relative;
+}
+
+.conteudo-format {
+	margin: 0 auto;
+	width: 980px;
+    padding: 40px 100px;
+    color: #FFF;
+}
+
+.size-principal{
+	margin: 0;
+	font-size: 40px;
+}
+
+
+.size-secundario{
+	font-size:30px;
+}
+
+.size-texto{
+	margin-top: 0;
+	font-size: 20px;
+}
+
+
+.fonte-titulo {
+	font-family: 'Raleway';
+	font-weight: bold;
+}
+
+.fonte-texto {
+	font-family: 'Raleway';
+	font-weight: normal;
+}
+
+
+.linhadivisora {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.linhacinza {
+	border-color: #333;
+}
+
+.texto-cinza{
+	color: #333;
+}
+
+.bigvideo {
+	width: 780px;
+	margin: auto;
+}

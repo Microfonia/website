@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block conteudo %}
+
+{% block css %}<link rel="stylesheet" href="{% static 'microfonia/descricao.css' %}" type="text/css" charset="utf-8"> {% endblock %}
+
+		<div id="nome-video">
+			<h1 class="fonte-titulo size-principal">MICROFONIA RADIOCAST EP. 1</h1>
+			<h3 class="fonte-texto size-texto"> 17 de março de 2017 </h3>
+		</div>
+
+
+		<div class="bigvideo">
+			<iframe width="780" height="480" src="https://www.youtube.com/embed/3BHyGkJzpOI" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+
+		<div id="compartilhe" class="fonte-titulo">
+			<text>COMPARTILHE</text>
+			<text id="todos">VER TODOS</text>
+			<ul class="texto-cinza">
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			</ul>
+			<hr class="linhacinza linhadivisora">
+		<div>
+		<div id="descricao">
+			<div id="desc-esq">
+				<div class="sino-elenc">
+					<h3 class="fonte-titulo size-secundario">SINOPSE</h3>
+					
+					<div class="fonte-texto size-texto">
+						<p> Nesse RadioCast, ouça os erros de gravação da primeira temporada de Casos da Cidade do Cobre, um bate-papo sobre a criação do Microfonia e o teaser da próxima série!</p> 
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+						</div>
+				</div>
+
+				<hr class="linhacinza linhadivisora">
+
+				<div class="sino-elenc">
+					<h3 class="fonte-titulo size-secundario">ELENCO</h3>
+					<div class="fonte-texto size-texto">
+						<p>Fulano</p>
+						<p>Cicrano</p>
+						<p>Beltrano</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="desc-dir" class="linhacinza">
+				<div id="vid-rel" class="fonte-titulo size-secundario">
+					VIDEOS RELACIONADOS
+					<img src="{% static 'microfonia/img/thumbnail.jpg' %}" alt="thumbnail" class="thumb-rel">
+					<img src="{% static 'microfonia/img/thumbnail2.jpg' %}" alt="thumbnail" class="thumb-rel">
+				</div>
+			</div>
+		</div>
+
+{% endblock %}

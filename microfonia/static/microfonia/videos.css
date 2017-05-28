@@ -1,0 +1,36 @@
+
+
+#capa-serie{
+  border-radius: 8px;
+  border: 2px solid white;
+  width: 610px;
+  height: auto;
+  margin: 40px auto;
+}
+
+.section .container {
+  padding-top: 50px;
+  font-family: 'Raleway';
+  font-weight: bold;
+  
+}
+
+body .container {
+  width: 640px;
+}
+
+.container h3{
+  font-family: 'Raleway';
+  font-weight: bold;
+  text-align: center;
+}
+
+.container img{
+    height: 200px;
+    margin: 0;
+    
+}
+
+.container ul{
+  margin-top: 40px;
+}

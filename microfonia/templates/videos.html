@@ -26,18 +26,9 @@
 					</div>
 					<div class="col-md-6">
 						<ul>
-							<li>EPISÓDIO 01</li>
-							<li>EPISÓDIO 02</li>
-							<li>EPISÓDIO 03</li>
-							<li>EPISÓDIO 04</li>
-							<li>EPISÓDIO 05</li>
-							<li>EPISÓDIO 06</li>
-							<li>EPISÓDIO 07</li>
-							<li>EPISÓDIO 08</li>
-							<li>EPISÓDIO 09</li>
-							<li>EPISÓDIO 10</li>
-							<li>EPISÓDIO 11</li>
-							<li>EPISÓDIO 12</li>
+              {% for person in people %}
+              <li>{{ person.first_name }}</li>
+              {% endfor %}
 						</ul>
 					</div>	
 				</div>

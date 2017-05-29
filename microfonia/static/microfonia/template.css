@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
   	font-family: 'Raleway';
   	src: url('/static/microfonia/fonts/Raleway-Bold.ttf');
   	font-weight: normal;
@@ -10,6 +10,7 @@
   	font-size: 1em;
   	font-weight: bold;
 }
+<<<<<<< HEAD
 
 .header{
 	position: fixed;
@@ -37,6 +38,9 @@
 	display: inline;
 
 }
+=======
+*/
+>>>>>>> ad5cf060882d683dac1be4ffbf3f6244eb6f4ec2
 
 .aligncenter {
 	text-align: center;

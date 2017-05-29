@@ -2,9 +2,22 @@
 
 <link rel="stylesheet" href="{% static 'microfonia/template.css' %}" type="text/css" charset="utf-8">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-{% block css %} CSS ESPECIFICO AQUI {% endblock %}
+{% block css %} CSS ESPECIFICO AQUI {% endblock css%}
 <script src="https://use.fontawesome.com/e09838e29b.js"></script>
 
+<style>
+	@font-face {
+  	font-family: 'Raleway';
+  	src: url('{% static 'microfonia/fonts/Raleway-Bold.ttf' %}');
+  	font-weight: normal;
+}
+@font-face {
+  	font-family: 'Raleway';
+  	src: url('{% static 'microfonia/fonts/Raleway-Black.ttf' %}');
+  	font-size: 1em;
+  	font-weight: bold;
+}
+</style>
 
 
 <body class="bg-format fundocinza">
@@ -13,7 +26,7 @@
 		
 		{% block conteudo %}
 		TESTE
-		{% endblock %}
+		{% endblock conteudo%}
 
 	</div>
 </body>

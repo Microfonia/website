@@ -34,3 +34,11 @@ body .container {
 .container ul{
   margin-top: 40px;
 }
+
+.section ul{
+  list-style-type: none;
+  margin-left: 100px;
+}
+.section li{
+  padding-bottom: 3px;
+}

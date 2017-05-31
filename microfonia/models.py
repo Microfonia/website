@@ -6,6 +6,7 @@ class Person(models.Model):
 
 class Episode(models.Model):
 	episode_number = models.IntegerField()
+	episode_season = models.IntegerField()
 	episode_name = models.CharField(max_length=50)
 	episode_date = models.DateField()
 	episode_sinopsis = models.TextField()

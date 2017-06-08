@@ -110,6 +110,8 @@
 	width: 780px;
 	margin: auto;
 }
+
+
 .footer p {
 	margin-top: 90px;
 
@@ -120,5 +122,11 @@
 .footer a{
 	font-weight: lighter;
 	float: right;
-	padding: 40px;
+
+}
+.footer img {
+	margin-top: 80px;
+	margin-right: 25px;
+	width: 30px;
+	height: 30px;
 }

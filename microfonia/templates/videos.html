@@ -27,12 +27,12 @@
 					</div>
 					<div class="col-md-6">
 						<ul>
+
 							{% for episode in all_episodes%}
-								
+								{%if episode.serie == serie.name%}
 								<li> {{episode.episode}} </li>
-								
+								{%endif%}
 							{%endfor%}
-							
 						</ul>
 					</div>	
 				</div>

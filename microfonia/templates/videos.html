@@ -29,7 +29,7 @@
 						<ul>
 
 							{% for episode in all_episodes%}
-								{%if episode.serie == serie.name%}
+								{%if episode.serie.name == serie.name%}
 								<li> {{episode.episode}} </li>
 								{%endif%}
 							{%endfor%}

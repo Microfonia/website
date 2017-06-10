@@ -24,7 +24,6 @@ class Episode(models.Model):
 	episode_date = models.DateField()
 	episode_url = models.URLField()
 
-
 	def __str__(self):
  		return str(self.serie) + " - " + self.episode
 

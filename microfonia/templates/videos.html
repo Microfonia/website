@@ -11,8 +11,8 @@
 									<!-- TÍTULO -->
 		<div class="main">
 			<div class="container">
-				<h1 class="fonte-titulo size-principal aligncenter">MICROFONIA PRODUÇÕES</h1>
-				<img id="capa-serie" src="https://i.ytimg.com/vi/UPt5-Kr0GCM/maxresdefault.jpg"/>
+				<h1 class="title-font main-size aligncenter">MICROFONIA PRODUÇÕES</h1>
+				<img id="serie-cover" src="https://i.ytimg.com/vi/UPt5-Kr0GCM/maxresdefault.jpg"/>
 			</div>
 		</div>
 
@@ -28,10 +28,8 @@
 					<div class="col-md-6">
 						<ul>
 
-							{% for episode in all_episodes%}
-								{%if episode.serie.name == serie.name%}
+							{% for episode in serie.all_episodes%}
 								<li> {{episode.name}} </li>
-								{%endif%}
 							{%endfor%}
 						</ul>
 					</div>	

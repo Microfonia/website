@@ -16,7 +16,7 @@ class Episode(models.Model):
 	name = models.CharField(max_length=20)
 	season = models.CharField(max_length=2)
 	serie = models.ForeignKey(Serie, on_delete = models.CASCADE)
-	download = models.CharField(max_length=200)
+	link_download = models.CharField(max_length=200)
 	img = models.CharField(max_length=200)
 	cast = models.TextField()
 	sinopsis = models.TextField()
@@ -24,7 +24,7 @@ class Episode(models.Model):
 	url = models.URLField()
 
 	def __str__(self):
- 		return str(self.serie) + " - " + self.episode
+ 		return str(self.serie) + " - " + self.name
 
 		
 	

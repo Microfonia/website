@@ -1,49 +1,49 @@
-#compartilhe {
+#share {
 	position: relative;
 	margin-top: 30px;
 	font-size: 30px;
 
 }
-#compartilhe #todos {
+#share #all {
 	position: absolute;
 	right: 0;
 }
 
-#compartilhe ul {
+#share ul {
 	list-style-type: none;
 	position: relative; 
 	padding: 0;
 }
 
-#compartilhe ul li {
+#share ul li {
 	display: inline-block;
 	padding: 0 10px;
 }
 
-#descricao {
+#description {
 	position: relative;
 }
 
-#descricao #desc-esq {
+#description #desc-left {
 	width: 50%;
 	position: relative;
 }
 
-#descricao #desc-esq .linhacinza {
+#description #desc-left .grey-line {
 	margin-left: 0;
 	width: 95%;
 }
 
-.sino-elenc h3{
+.sino-cast h3{
 	padding-top: 20px;
 }
 
-.sino-elenc p {
+.sino-cast p {
 	width: 80%;
 	margin-bottom: 40px;
 }
 
-#descricao #desc-dir{
+#description #desc-right{
 	width: 50%;
 	right: 0;
 	top: 0;
@@ -54,11 +54,11 @@
 }
 
 
-#descricao #desc-dir #vid-rel{
+#description #desc-right #vid-rel{
 	margin-left: 20px;
 }
 
-#descricao #desc-dir #vid-rel .thumb-rel {
+#description #desc-right #vid-rel .thumb-rel {
 	margin: 30px 10px;
     max-height: 400px;
     width: 100%;

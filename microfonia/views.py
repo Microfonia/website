@@ -9,6 +9,7 @@ def videos(request):
 	context = {
 		'all_episodes': all_episodes,
 		'all_series': all_series,
+
 	}
 	return render(request, 'videos.html', context)
 

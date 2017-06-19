@@ -9,14 +9,14 @@
 									<!-- TÍTULO -->
 									
 		<div id="name-video">
-     		<h1 class="title-font main-size">{{ epi.name }}</h1>
-			<h3 class="text-font text-size"> {{ epi.date }} </h3>
+     		<h1 class="title-font main-size">{{ episode.name }}</h1>
+			<h3 class="text-font text-size"> {{ episode.date }} </h3>
 		</div>
 
 									<!-- VÍDEO -->
 
 		<div class="bigvideo">
-			<iframe width="780" height="480" src= {{epi.url}} frameborder="0" allowfullscreen></iframe>
+			<iframe width="780" height="480" src= {{episode.url}} frameborder="0" allowfullscreen></iframe>
 		</div>
 
 									<!-- COMPARTILHAR E VER TODOS -->
@@ -39,7 +39,7 @@
 					<h3 class="title-font secondary-size">SINOPSE</h3>
 					
 					<div class="text-font text-size">
-						<p> {{ epi.sinopsis }}</p> 
+						<p> {{ episode.sinopsis|linebreaks }}</p> 
 						</div>
 				</div>
 
@@ -48,7 +48,7 @@
 				<div class="sino-cast">
 					<h3 class="title-font secondary-size">ELENCO</h3>
 					<div class="text-font text-size">
-						<p> {{ epi.cast }} </p>
+						<p> {{ episode.cast|linebreaks }} </p>
 					</div>
 				</div>
 

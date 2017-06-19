@@ -27,12 +27,11 @@
 					</div>
 					<div class="col-md-6">
 						<ul>
-
-							{% for episode in serie.all_episodes%}
-								<li> {{episode.name}} </li>
-							{%endfor%}
-						</ul>
-					</div>	
+						{% for episode in serie.episodes %}
+							<li><a href="./{{serie.abbrev}}/{{episode.season}}_{{episode.number}}"> {{ episode.name }} </a></li>
+						{% endfor %}
+						</ul>		
+					</div>
 				</div>
 				{%endfor%}
 			</div>

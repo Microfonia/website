@@ -8,54 +8,54 @@
 
 									<!-- TÍTULO -->
 									
-		<div id="nome-video">
-     		<h1 class="fonte-titulo size-principal">{{ epi.episode_name }}</h1>
-			<h3 class="fonte-texto size-texto"> {{ epi.episode_date }} </h3>
+		<div id="name-video">
+     		<h1 class="title-font main-size">{{ epi.name }}</h1>
+			<h3 class="text-font text-size"> {{ epi.date }} </h3>
 		</div>
 
 									<!-- VÍDEO -->
 
 		<div class="bigvideo">
-			<iframe width="780" height="480" src= {{epi.episode_url}} frameborder="0" allowfullscreen></iframe>
+			<iframe width="780" height="480" src= {{epi.url}} frameborder="0" allowfullscreen></iframe>
 		</div>
 
 									<!-- COMPARTILHAR E VER TODOS -->
 
-		<div id="compartilhe" class="fonte-titulo">
+		<div id="share" class="title-font">
 			<text>COMPARTILHE</text>
-			<text id="todos">VER TODOS</text>
-			<ul class="texto-cinza">
+			<text id="all">VER TODOS</text>
+			<ul class="grey-text">
 				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 			</ul>
-			<hr class="linhacinza linhadivisora">
+			<hr class="grey-line divisory-line">
 		</div>
 
 									<!-- SINOPSE E VIDEOS RELACIONADOS -->
 
-		<div id="descricao">
-			<div id="desc-esq">
-				<div class="sino-elenc">
-					<h3 class="fonte-titulo size-secundario">SINOPSE</h3>
+		<div id="description">
+			<div id="desc-left">
+				<div class="sino-cast">
+					<h3 class="title-font secondary-size">SINOPSE</h3>
 					
-					<div class="fonte-texto size-texto">
-						<p> {{ epi.episode_sinopsis }}</p> 
+					<div class="text-font text-size">
+						<p> {{ epi.sinopsis }}</p> 
 						</div>
 				</div>
 
-				<hr class="linhacinza linhadivisora">
+				<hr class="grey-line divisory-line">
 
-				<div class="sino-elenc">
-					<h3 class="fonte-titulo size-secundario">ELENCO</h3>
-					<div class="fonte-texto size-texto">
-						<p> {{ epi.episode_cast }} </p>
+				<div class="sino-cast">
+					<h3 class="title-font secondary-size">ELENCO</h3>
+					<div class="text-font text-size">
+						<p> {{ epi.cast }} </p>
 					</div>
 				</div>
 
 			</div>
 
-			<div id="desc-dir" class="linhacinza">
-				<div id="vid-rel" class="fonte-titulo size-secundario">
+			<div id="desc-right" class="grey-line">
+				<div id="vid-rel" class="title-font secondary-size">
 					VIDEOS RELACIONADOS
 					<img src="{% static 'microfonia/img/thumbnail.jpg' %}" alt="thumbnail" class="thumb-rel">
 					<img src="{% static 'microfonia/img/thumbnail2.jpg' %}" alt="thumbnail" class="thumb-rel">

@@ -39,17 +39,15 @@
 
 }
 
-
-
 .aligncenter {
 	text-align: center;
 }
 
-.fundocinza {
+.grey-background {
 	background-color: #222;
 }
 
-.fundopreto {
+.black-background {
 	background-color: #000;
 }
 
@@ -58,51 +56,51 @@
 	position: relative;
 }
 
-.conteudo-format {
+.content-format {
 	margin: 0 auto;
 	width: 980px;
     padding: 40px 100px;
     color: #FFF;
 }
 
-.size-principal{
+.main-size{
 	padding-top: 60px;
 	margin: 0;
 	font-size: 40px;
 }
 
 
-.size-secundario{
+.secondary-size{
 	font-size:30px;
 }
 
-.size-texto{
+.text-size{
 	margin-top: 0;
 	font-size: 20px;
 }
 
 
-.fonte-titulo {
+.title-font {
 	font-family: 'Raleway';
 	font-weight: bold;
 }
 
-.fonte-texto {
+.text-font {
 	font-family: 'Raleway';
 	font-weight: normal;
 }
 
 
-.linhadivisora {
+.divisory-line {
 	width: 100%;
 	margin-bottom: 5px;
 }
 
-.linhacinza {
+.grey-line {
 	border-color: #333;
 }
 
-.texto-cinza{
+.grey-text{
 	color: #333;
 }
 

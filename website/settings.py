@@ -123,5 +123,5 @@ STATIC_URL = '/static/'
 
 # Media root files (images uploaded)
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'microfonia/static/microfonia/img/')
-MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'microfonia/media/')
+MEDIA_URL = 'microfonia/media/'

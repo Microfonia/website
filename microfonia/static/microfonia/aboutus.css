@@ -16,7 +16,12 @@ h2{
 
 #first-element{
 	text-align: center;
-	padding-top: 110px;
+	padding-top: 90px;
+	padding-bottom: 20px;
+	background-color: white;
+	color: black;
+	width: 980px;
+	margin-left: -100px;
 
 }
 
@@ -63,3 +68,36 @@ a{
 	color: white;
 }
 
+#content {
+	margin-top: 90px;
+	text-align: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+
+
+}
+
+input, textarea  {
+	color: #696969;
+	width: 400px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	border-radius: 3px;
+}
+
+textarea {
+	width: 400px;
+	height: 200px;
+	text-align: left;
+}
+
+button {
+	background-color: #292929;
+	color: white;
+	border-radius: 3px;
+}

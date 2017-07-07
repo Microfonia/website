@@ -1,18 +1,19 @@
+body {
+	left: 0;
+	position: relative;
+	transition: .3s left ease-in-out;
+}
+
 #menu {
 	position: fixed;
-	z-index: 2;
+	z-index: 3;
 	overflow-y: scroll;
+	top: 0;
 	right: -650;
 	width: 650px;
 	height: 100%;
 	background-color: #252525;
 	transition: .3s all ease-in-out;
-}
-
-#feed {
-	left: 0;
-	position: relative;
-	transition: .3s left ease-in-out;
 }
 
 .menu-active{
@@ -24,27 +25,38 @@
 	display: block;
 	position: fixed;
 	right: 0!important;
+	top: 0 !important;
 }
 
 .header{
 	width: 100%;
-	height: 360px;
+	min-height: 400px;
 	background-color: #FFF;
-	z-index: 10;
 }
 
-#menu-button{
+.header h1 {
+	transition: 0.5s all ease-in-out;
+}
+
+.menu-button{
 	background-color: #FFF;
 	border-style: solid;
 	border-color: #000;
-	position: absolute;
+	position: fixed;
+	z-index: 3;
 	top: 20px;
 	right: 30px;
+	transition: .3s all ease-in-out;
 }
 
-#menu-button i{
+.menu-button:focus{
+	outline: 0;
+}
+
+.menu-button i{
 	padding-right: 8px;
 }
+
 .title-font{
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
@@ -177,28 +189,41 @@
 	color: #FFF;
 }
 
+.footer .nav {
+	min-width: 300px;
+}
+
 .footer .nav h3{
 	text-align: center;
 	font-size: 32px;
 	margin-top: 80px;
 }
 
-.footer .nav #links {
-	width: 300px;
+.footer .footerlinks {
+	width: 300px; 
 	margin: 0 auto;
-	margin-top: 40px;
+	display: flex;
 }
 
-.footer .nav #youtube {
-    margin-right: 136px;
+
+.footer .access-links {
+    font-weight: lighter;
+    flex: 1;
+    margin: 20px 20px 0 20px;
 }
 
-.footer a{
-	font-weight: lighter;
-	width: 300px;
-	margin: 0 auto;
+.footer #facebook {
+    margin-left: 90px;
 }
 
-.footer img {
+.footer .access-links img {
 	height: 80px;
+}
+
+.hide {
+	display: none;
+}
+
+.button-menu-open {
+	right: 680;
 }

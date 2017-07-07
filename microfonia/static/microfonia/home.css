@@ -83,3 +83,28 @@
 #second-serie{
 	background-image: url('./img/atraves-do-veu.png');
 }
+
+@media only screen and (max-width: 480px) {
+	
+	.feat-header {
+		padding-top: 40px;
+	}
+	.feat-header h2 {
+		font-size: 30px;
+	}
+
+	.feat-summary {
+		width: 80%;
+
+	}
+
+	.feat-summary p {
+		font-size: 18px;
+		padding-top: 20px;
+	}
+
+	.more-link {
+		font-size: 14px;
+		padding: 10px 30px;
+	}
+}

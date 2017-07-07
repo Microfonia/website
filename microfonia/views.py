@@ -19,4 +19,8 @@ def descricao(request):
 
 	return render(request, 'descricao.html', { 'epi': first_epi })
 
+def aboutus(request):
+	return render(request, 'aboutus.html')
 
+def contact(request):
+	return render(request, 'contact.html')

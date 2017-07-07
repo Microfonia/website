@@ -20,3 +20,5 @@ def descricao(request, seriename=None, episodenum=None, seasonnum=None):
 	episode = Episode.objects.filter(serie__abbrev=seriename).filter(season=seasonnum).get(number=episodenum)
 	return render(request, 'descricao.html', { 'episode': episode })
 
+def home(request):
+	return render(request, 'home.html')

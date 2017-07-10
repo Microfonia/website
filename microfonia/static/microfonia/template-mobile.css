@@ -1,5 +1,18 @@
 @media only screen and (max-width: 1024px) {
 	
+	#menu {
+	right: -400;
+	width: 400px;
+	}
+
+	.menu-active{
+	left:-400!important;
+	}
+
+	.menu-button{
+
+	}
+
 	.title-font{
 		font-size: 46px;
 	}
@@ -7,7 +20,12 @@
 	.header{
 		min-height: 300px;
 	}
+
+	.button-menu-open {
+		right: 430;
+	}
 }
+
 
 @media only screen and (max-width: 480px) {
 
@@ -26,8 +44,6 @@
 	}
 
 	#menu {
-	z-index: 2;
-	overflow-y: hidden;
 	display: none;
 	top:260px;
 	width: 100%;

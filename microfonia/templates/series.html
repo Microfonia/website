@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block css %} <link rel="stylesheet" href="{% static 'microfonia/series.css' %}" type="text/css" charset="utf-8"> {% endblock css %}
+
+{% block header %}
+	<header class="header">
+
+		<div>
+			<h2 class="title-font aligncenter home-title hblack-fontcolor">MICROFONIA PRODUÇÕES</h1>
+			<p class="subtitle-font aligncenter home-subtitle hblack-fontcolor">Áudio-dramas e podcasts para você baixar e ouvir onde quiser</p>
+		</div>
+
+		<div>
+			<h1 class="title-font aligncenter page-title white-text">SÉRIES</h1>
+		</div>
+
+	</header>
+{% endblock header %}
+
+{% block conteudo %}
+
+	{% for serie in all_series %}
+	<div>
+		<h2 class="serie-title aligncenter title-font">{{serie.name}}</h2>
+		<img class="serie-img aligncenter" src='{{ serie.img }}'>
+	</div>
+	{% endfor %}
+{% endblock conteudo %}

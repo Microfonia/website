@@ -7,7 +7,6 @@ body {
 #menu {
 	position: fixed;
 	z-index: 3;
-	overflow-y: scroll;
 	top: 0;
 	right: -650;
 	width: 650px;
@@ -27,6 +26,8 @@ body {
 	right: 0!important;
 	top: 0 !important;
 }
+
+
 
 .header{
 	width: 100%;
@@ -48,7 +49,9 @@ body {
 	right: 30px;
 	transition: .3s all ease-in-out;
 }
-
+.button-menu-open {
+	right: 680;
+}
 .menu-button:focus{
 	outline: 0;
 }
@@ -224,6 +227,3 @@ body {
 	display: none;
 }
 
-.button-menu-open {
-	right: 680;
-}

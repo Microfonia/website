@@ -39,9 +39,9 @@
 	<div id="menu">
 		<nav class="nav">
 			<ul class="title-font">
-				<li><a href="{% url 'home' %}">PÁGINA INICIAL</a></li>
+				<li><a class="default-link" href="{% url 'home' %}">PÁGINA INICIAL</a></li>
 				<hr class="grey-line">
-				<li><a href="{% url 'videos' %}">MINI-SÉRIES</a></li>
+				<li><a class="default-link" href="{% url 'series' %}">MINI-SÉRIES</a></li>
 				<hr class="grey-line">
 				<li>QUEM SOMOS</li>
 				<hr class="grey-line">
@@ -53,7 +53,7 @@
 
 
 	<div id="feed">
-		<div>
+		<div class="content">
 			{% block conteudo %}
 			TESTE
 			{% endblock conteudo%}

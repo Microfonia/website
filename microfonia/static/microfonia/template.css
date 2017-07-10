@@ -52,6 +52,8 @@ body {
 .button-menu-open {
 	right: 680;
 }
+
+
 .menu-button:focus{
 	outline: 0;
 }
@@ -107,7 +109,6 @@ body {
 
 .nav a:hover, .nav a:focus, .nav a:active{
 	color: gray;
-	text-decoration: none;
 	transition: linear 0.05s;
 }
 
@@ -227,3 +228,6 @@ body {
 	display: none;
 }
 
+.default-link:hover, .default-link:focus, .default-link:active {
+	text-decoration: none;
+}

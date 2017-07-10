@@ -7,10 +7,12 @@
 {% block headertitle %}SÉRIES{% endblock headertitle %}
 
 {% block conteudo %}
+
 	{% for serie in all_series %}
 	<div>
 		<h2 class="serie-title aligncenter title-font">{{serie.name}}</h2>
 		<img class="serie-img aligncenter" src='{{ serie.img }}'>
 	</div>
+
 	{% endfor %}
 {% endblock conteudo %}

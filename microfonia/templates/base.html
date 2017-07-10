@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
 
-	{% block css %} CSS ESPECIFICO AQUI {% endblock %}
+	{% block css %}{% endblock %}
 
 	<script src="https://use.fontawesome.com/e09838e29b.js"></script>
 </head>
@@ -59,10 +59,15 @@
 
 
 	<div id="feed">
+<<<<<<< HEAD
 		<div class="content">
 			{% block conteudo %}
 			TESTE
 			{% endblock conteudo%}
+=======
+		<div>
+			{% block conteudo %}{% endblock conteudo%}
+>>>>>>> 4b43f4733257611f283b80cfa1b3771e76641549
 		</div>
 
 		<footer class="footer black-background">
@@ -85,11 +90,11 @@
 $(document).ready(function() {
 	$(".menu-button").on("click", function(){
 
-	$(".menu-button").toggleClass("button-menu-open");
-	$("body").toggleClass("menu-active");
-	$("#menu").toggleClass("menu-expanded");
-	$("#menu-open").toggleClass('hide');
-	$("#menu-close").toggleClass('hide');
+		$(".menu-button").toggleClass("button-menu-open");
+		$("body").toggleClass("menu-active");
+		$("#menu").toggleClass("menu-expanded");
+		$("#menu-open").toggleClass('hide');
+		$("#menu-close").toggleClass('hide');
 	});
 });
 

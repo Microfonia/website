@@ -24,6 +24,9 @@
 	margin-left: 250px;
 
 }
+
+
+
 .nav ul{
 	margin-top: 25px;
 	margin-right: 200px;
@@ -46,6 +49,7 @@
 .grey-background {
 	background-color: #222;
 }
+
 
 .black-background {
 	background-color: #000;
@@ -110,6 +114,28 @@
 }
 
 
+#first-element{
+	text-align: center;
+	padding-top: 90px;
+	padding-bottom: 20px;
+	background-color: white;
+	color: black;
+	width: 980px;
+	margin-left: -100px;
+
+}
+
+#first-element p{
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 80px;
+}
+
+a{
+	color: white;
+}
+
+
 .footer p {
 	margin-top: 90px;
 
@@ -128,3 +154,4 @@
 	width: 30px;
 	height: 30px;
 }
+

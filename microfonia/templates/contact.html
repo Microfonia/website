@@ -1,0 +1,41 @@
+
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block css %}<link rel="stylesheet" href="{% static 'microfonia/contact.css' %}" type="text/css" charset="utf-8"> {% endblock css%}
+
+{% block conteudo %}
+
+
+
+<div id="first-element">
+<h1>CONTATO</h1>
+
+<p><strong>Caso queira anunciar seu produto ou marca, ter seu roteiro produzido ou mesmo se deseja participar de um episódio, entre em contato conosco. Críticas e sugestões são sempre bem-vindas.</strong></p>
+</div>
+
+<div id="content">
+	<form action="#" method="">
+
+			<label for="name">Nome</label>
+			<input type="text" name="name" value="Seu nome" />
+
+			<label for="email">Email</label>
+			<input type="email" name="email" value="Email para contato" />
+
+			<label for="message">Mensagem</label>
+			<textarea id="message"></textarea>
+
+			<button>Enviar</button>
+
+	</form>
+
+</div>
+
+
+
+
+
+
+{% endblock conteudo %}

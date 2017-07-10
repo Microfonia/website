@@ -16,7 +16,13 @@ def videos(request, seriename=None):
 	return render(request, 'videos.html', context)
 
 
-def descricao(request, seriename=None, episodenum=None, seasonnum=None):
-	episode = Episode.objects.filter(serie__abbrev=seriename).filter(season=seasonnum).get(number=episodenum)
-	return render(request, 'descricao.html', { 'episode': episode })
+def descricao(request):
+	first_epi = Episode.objects.first()
 
+	return render(request, 'descricao.html', { 'epi': first_epi })
+
+def aboutus(request):
+	return render(request, 'aboutus.html')
+
+def contact(request):
+	return render(request, 'contact.html')

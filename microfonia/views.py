@@ -36,21 +36,21 @@ def contact(request):
             contact_email = request.POST.get('contact_email', '')
             form_content = request.POST.get('content', '')
             template = get_template('contact_template.txt')
-            context = Context({
+            context = {
                 'contact_name': contact_name,
                 'contact_email': contact_email,
                 'form_content': form_content,
-                })
+                }
             content = template.render(context)
             email = EmailMessage(
                 "New contact form submission",
                 content,
-                "Your website" +'',
-                ['youremail@gmail.com'],
+                "microfoniaproducoes.com.br" +'',
+                ['microfoniaproducoes@gmail.com'],
                 headers = {'Reply-To': contact_email }
                 )
             email.send()
-            return redirect('contact')
+            return redirect('/microfonia/contato')
     return render(request, 'contact.html', {'form': form_class,})
 
 

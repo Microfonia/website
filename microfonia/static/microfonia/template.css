@@ -7,7 +7,6 @@ body {
 #menu {
 	position: fixed;
 	z-index: 3;
-	overflow-y: scroll;
 	top: 0;
 	right: -650;
 	width: 650px;
@@ -30,8 +29,8 @@ body {
 
 .header{
 	width: 100%;
-	min-height: 400px;
-	background-color: #FFF;
+	min-height: 300px;
+	background-color: #252525;
 }
 
 .header h1 {
@@ -39,15 +38,20 @@ body {
 }
 
 .menu-button{
-	background-color: #FFF;
 	border-style: solid;
-	border-color: #000;
 	position: fixed;
 	z-index: 3;
 	top: 20px;
 	right: 30px;
 	transition: .3s all ease-in-out;
+	border-color: rgba(255,255,255,.7);
+	color: rgba(255,255,255,.7);
+	background-color: #252525;
 }
+.button-menu-open {
+	right: 680;
+}
+
 
 .menu-button:focus{
 	outline: 0;
@@ -57,10 +61,15 @@ body {
 	padding-right: 8px;
 }
 
+.title-fontcolor { 
+	/* font color for the black header*/
+	color: rgba(255,255,255,.7)
+}
+
 .title-font{
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
-	font-size: 100px;
+	font-size: 30px;
 }
 
 .button-font{
@@ -72,20 +81,37 @@ body {
 .subtitle-font{
 	font-family: 'Lato', sans-serif;
 	font-weight: 200;
-	font-size: 30px;
-	color: gray;
-
+	font-size: 14px;
 }
+
 .home-title{
-	padding-top: 100px;
+	text-align: left;
+	padding-top: 16px;
+	padding-left: 24px;
 	margin: 0;
 }
 
+
 .home-subtitle{
-	padding-top: 20px;
+	text-align: left;
+	padding-top: 4px;
+	padding-left: 24px;
+}
+
+.serie-title {
+	text-transform: uppercase;
+	font-size: 40px;
 }
 
 
+.page-title {
+	padding-top: 44px;
+	margin-bottom: 0;
+}
+
+.pagetitle-font{
+	font-size: 80px;
+}
 .nav ul{
 	margin-top: 45px;
 	margin-right: 200px;
@@ -104,7 +130,6 @@ body {
 
 .nav a:hover, .nav a:focus, .nav a:active{
 	color: gray;
-	text-decoration: none;
 	transition: linear 0.05s;
 }
 
@@ -247,6 +272,6 @@ a{
 	display: none;
 }
 
-.button-menu-open {
-	right: 680;
+.default-link:hover, .default-link:focus, .default-link:active {
+	text-decoration: none;
 }

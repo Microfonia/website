@@ -1,0 +1,14 @@
+
+.serie-title {
+	text-transform: uppercase;
+	font-size: 40px;
+}
+.serie-img {
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.content {
+	padding-top: 40px;
+}

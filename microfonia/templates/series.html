@@ -11,7 +11,7 @@
 	{% for serie in all_series %}
 	<div>
 		<h2 class="serie-title aligncenter title-font">{{serie.name}}</h2>
-		<img class="serie-img aligncenter" src='{{ serie.img }}'>
+		<img class="serie-img aligncenter" src='{{ serie.img.url }}'>
 	</div>
 
 	{% endfor %}

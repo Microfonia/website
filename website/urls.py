@@ -21,6 +21,6 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^microfonia/', include('microfonia.urls')),
+    url(r'^', include('microfonia.urls')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

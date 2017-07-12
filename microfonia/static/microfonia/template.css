@@ -84,6 +84,12 @@ body {
 	font-size: 14px;
 }
 
+.text-font {
+	font-family: 'Lato', sans-serif;
+	font-weight: 200;
+	font-size: 14px;
+}
+
 .home-title{
 	text-align: left;
 	padding-top: 16px;
@@ -112,6 +118,7 @@ body {
 .pagetitle-font{
 	font-size: 80px;
 }
+
 .nav ul{
 	margin-top: 45px;
 	margin-right: 200px;
@@ -135,6 +142,18 @@ body {
 
 .aligncenter {
 	text-align: center;
+}
+
+.alignleft{
+	text-align: left;
+}
+
+.alignright{
+	text-align: right;
+}
+
+.justify{
+	text-align: justify;
 }
 
 .grey-background {
@@ -173,13 +192,6 @@ body {
 	margin-top: 0;
 	font-size: 20px;
 }
-
-
-.text-font {
-	font-family: 'Raleway';
-	font-weight: normal;
-}
-
 
 .divisory-line {
 	width: 100%;
@@ -235,6 +247,10 @@ a{
 
 .white-text {
 	color: #FFF;
+}
+
+.black-text {
+	color: #000;
 }
 
 .footer .nav {

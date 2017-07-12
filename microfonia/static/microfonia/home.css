@@ -1,0 +1,115 @@
+.layout-serie{
+	height: 620;
+	position: relative;
+}
+
+.feat-background {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	opacity: .3;
+	z-index: 2;
+	height: 620;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.feat-header {
+	padding-top: 90;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+
+.feat-header h3{
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 18px;
+}
+
+.feat-header h2{
+	font-size: 40px;
+	text-align: center;
+}
+
+.feat-summary {
+	position: relative;
+	z-index: 2;
+	width: 700;
+	margin: 20px auto;
+	opacity: 1;
+}
+
+.feat-summary p {
+	padding-top: 60px;
+	font-size: 20px;
+}
+
+.featured{
+	background-color: #252525;
+}
+
+.more-link{
+	border: 2px solid white;
+	width: 48%;
+	max-width: 300px;
+	text-decoration: none;
+	color: white;
+	position: relative;
+	z-index: 2;
+	padding: 15px 60px;
+	margin-top: 10px;
+	margin: 0 auto;
+	display: block;
+	font-size: 16px;
+}
+
+.more-link:visited, .more-link:focus {
+	text-decoration: none;
+	color: white;
+}
+
+.more-link:hover, .more-link:active{
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	transition: 0.5s;
+}
+
+.more-link i {
+    font-size: 14px;
+    padding-left: 6px;
+}
+
+#first-serie{
+	background-image: url('./img/cidade-do-cobre.png');
+}
+
+#second-serie{
+	background-image: url('./img/atraves-do-veu.png');
+}
+
+@media only screen and (max-width: 480px) {
+	.feat-header {
+		padding-top: 40px;
+	}
+	.feat-header h2 {
+		font-size: 30px;
+	}
+
+	.feat-summary {
+		width: 80%;
+
+	}
+
+	.feat-summary p {
+		font-size: 18px;
+		padding-top: 20px;
+	}
+
+	.more-link {
+		font-size: 14px;
+		padding: 10px 30px;
+	}
+}

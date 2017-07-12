@@ -5,7 +5,7 @@ from django.db import models
 
 class Serie(models.Model):
 	name = models.CharField(max_length=50)
-	img = models.CharField(max_length=200)
+	img = models.ImageField(upload_to='series/')
 	abbrev = models.CharField(max_length=6)
 
 	def __str__(self):
@@ -18,7 +18,7 @@ class Episode(models.Model):
 	season = models.CharField(max_length=2)
 	serie = models.ForeignKey(Serie, on_delete = models.CASCADE)
 	link_download = models.CharField(max_length=200)
-	img = models.CharField(max_length=200)
+	img = models.ImageField(upload_to='episodes/')
 	cast = models.TextField()
 	sinopsis = models.TextField()
 	date = models.DateField()

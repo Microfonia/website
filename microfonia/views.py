@@ -56,3 +56,5 @@ def contact(request):
     return render(request, 'contact.html', {'form': form_class,})
 
 
+def home(request):
+	return render(request, 'home.html')

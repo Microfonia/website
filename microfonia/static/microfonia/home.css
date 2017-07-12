@@ -65,7 +65,12 @@
 	font-size: 16px;
 }
 
-.more-link:active, .more-link:hover{
+.more-link:visited, .more-link:focus {
+	text-decoration: none;
+	color: white;
+}
+
+.more-link:hover, .more-link:active{
 	text-decoration: none;
 	color: black;
 	background-color: white;
@@ -76,6 +81,7 @@
     font-size: 14px;
     padding-left: 6px;
 }
+
 #first-serie{
 	background-image: url('./img/cidade-do-cobre.png');
 }
@@ -85,7 +91,6 @@
 }
 
 @media only screen and (max-width: 480px) {
-	
 	.feat-header {
 		padding-top: 40px;
 	}

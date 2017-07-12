@@ -1,60 +1,86 @@
 {% load static %}
 
-<link rel="stylesheet" href="{% static 'microfonia/template.css' %}" type="text/css" charset="utf-8">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
-{% block css %} CSS ESPECIFICO AQUI {% endblock %}
-
-<script src="https://use.fontawesome.com/e09838e29b.js"></script>
-
-<style>
-	@font-face {
-  	font-family: 'Raleway';
-  	src: url('{% static 'microfonia/fonts/Raleway-Bold.ttf' %}');
-  	font-weight: normal;
-}
-@font-face {
-  	font-family: 'Raleway';
-  	src: url('{% static 'microfonia/fonts/Raleway-Black.ttf' %}');
-  	font-size: 1em;
-  	font-weight: bold;
-}
-</style>
 
 
-<body class="bg-format grey-background">
-	<div class="header">
-		<div class="col-md-2">
-			<img src="{% static 'microfonia/img/thumbnail3.jpg' %}" alt="thumbnail" class="logoheader"/>
-		</div>
-		<div class="pull-right">
-			<div class="nav">
-				<ul>
-					<li>Home</li>
-					<li><a href="{% url 'videos' %}">Séries</a></li>
-					<li>Contato</li>
-				</ul>
-			</div>
-		</div>		
+<head>
+	<title>Microfonia Produções</title>
+	<meta name="viewport" content = "width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{% static 'microfonia/template.css' %}" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="{% static 'microfonia/template-mobile.css' %}" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
+
+	{% block css %}{% endblock %}
+
+	<script src="https://use.fontawesome.com/e09838e29b.js"></script>
+</head>
+
+<body class="bg-format">
+
+
+
+	<div>
+		<button class="menu-button button-font"><i id='menu-open' class="fa fa-bars" aria-hidden="true"></i><i id='menu-close' class="fa fa-times hide" aria-hidden="true"></i>MENU</button>
 	</div>
 
-	<div class="content-format black-background">
+	<header class="header">
 
-	
+		<div>
+			<h1 class="title-font aligncenter home-title">MICROFONIA PRODUÇÕES</h1>
+			<p class="subtitle-font aligncenter home-subtitle">Áudio-dramas e podcasts para você baixar e ouvir onde quiser</p>
+		</div>
 
-		{% block conteudo %}
-		TESTE
-		{% endblock conteudo%}
+	</header>
 
-		<div class="footer">
+	<div id="menu">
+		<nav class="nav">
+			<ul class="title-font">
+				<li><a href="{% url 'home' %}">PÁGINA INICIAL</a></li>
+				<hr class="grey-line">
+				<li><a href="{% url 'videos' %}">MINI-SÉRIES</a></li>
+				<hr class="grey-line">
+				<li>QUEM SOMOS</li>
+				<hr class="grey-line">
+				<li>CONTATO</li>
+			</ul>
+		</nav>
+	</div>
+
+
+
+	<div id="feed">
+		<div>
+			{% block conteudo %}{% endblock conteudo%}
+		</div>
+
+		<footer class="footer black-background">
 			<div class="nav">
-				<p>&copy; 2016 Microfonia Produções</p>
-				<a target="_blank" title="Nossa página do Facebook" href="https://www.facebook.com/microfoniaproducoes/?hc_ref=SEARCH&fref=nf"><img alt="follow me on facebook" src="//login.create.net/images/icons/user/facebook_30x30.png" border=0></a>
-				<a target="_blank" title="Nosso canal do Youtube" href="https://www.youtube.com/channel/UCyGRwgmcx5rLXjxl2xJcUZA"><img alt="follow me on youtube" src="https://www.gettysburgbattlefieldtours.com/wp-content/uploads/2014/01/256px-Youtube_icon.svg_.png" border=0></a>
+				<h3 class="white-text title-font">ACESSE:</h3>
+				<div class="footerlinks">
+					<a id="youtube" class="access-links" target="_blank" title="Nosso canal do Youtube" href="https://www.youtube.com/channel/UCyGRwgmcx5rLXjxl2xJcUZA"><img alt="follow me on youtube" src="https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png" border=0></a>
+					<a id="facebook" class="access-links" target="_blank" title="Nossa página do Facebook" href="https://www.facebook.com/microfoniaproducoes/?hc_ref=SEARCH&fref=nf"><img alt="follow me on facebook" src="https://i0.wp.com/compratuoferta.com/images/facebook-blanco-01.png" border=0></a>
+				</div>
 				
 			</div>
-		</div>
+			<p class="white-text button-font">&copy; 2016 Microfonia Produções</p>
+		<footer>
 	</div>
 </body>
-0
+
+<script src="{% static 'microfonia/jquery/jquery-3.2.1.min.js' %}"></script>
+<script>
+
+$(document).ready(function() {
+	$(".menu-button").on("click", function(){
+
+		$(".menu-button").toggleClass("button-menu-open");
+		$("body").toggleClass("menu-active");
+		$("#menu").toggleClass("menu-expanded");
+		$("#menu-open").toggleClass('hide');
+		$("#menu-close").toggleClass('hide');
+	});
+});
+
+</script>

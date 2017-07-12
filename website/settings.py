@@ -27,6 +27,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+EMAIL_BACKEND ='django.core.mail.backends.console.EmailBackend' 
+DEFAULT_FROM_EMAIL = 'testing@example.com'
+EMAIL_HOST_USER = 'microfoniaproducoes@gmail.com'
+EMAIL_HOST_PASSWORD = 'cidadedocobre'
+EMAIL_USE_TLS = False 
+EMAIL_PORT = 1025
 
 # Application definition
 

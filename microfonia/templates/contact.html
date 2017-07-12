@@ -4,6 +4,7 @@
 {% load static %}
 
 {% block css %}<link rel="stylesheet" href="{% static 'microfonia/contact.css' %}" type="text/css" charset="utf-8"> {% endblock css%}
+{% block title %}Contact - {{ block.super }}{% endblock %}
 
 {% block conteudo %}
 
@@ -16,8 +17,9 @@
 </div>
 
 <div id="content">
-	<form action="#" method="">
-
+	<form role="form" action="" method="post">
+			{% csrf_token %}
+			{{ form.as_p }}
 			<label for="name">Nome</label>
 			<input type="text" name="name" value="Seu nome" />
 

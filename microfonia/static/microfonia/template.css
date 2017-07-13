@@ -84,6 +84,12 @@ body {
 	font-size: 14px;
 }
 
+.text-font {
+	font-family: 'Lato', sans-serif;
+	font-weight: 200;
+	font-size: 14px;
+}
+
 .home-title{
 	text-align: left;
 	padding-top: 16px;
@@ -110,8 +116,11 @@ body {
 }
 
 .pagetitle-font{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
 	font-size: 80px;
 }
+
 .nav ul{
 	margin-top: 45px;
 	margin-right: 200px;
@@ -137,9 +146,22 @@ body {
 	text-align: center;
 }
 
+.alignleft{
+	text-align: left;
+}
+
+.alignright{
+	text-align: right;
+}
+
+.justify{
+	text-align: justify;
+}
+
 .grey-background {
 	background-color: #222;
 }
+
 
 .black-background {
 	background-color: #000;
@@ -173,13 +195,6 @@ body {
 	font-size: 20px;
 }
 
-
-.text-font {
-	font-family: 'Raleway';
-	font-weight: normal;
-}
-
-
 .divisory-line {
 	width: 100%;
 	margin-bottom: 5px;
@@ -202,6 +217,28 @@ body {
 	height: 400px;
 }
 
+#first-element{
+	text-align: center;
+	padding-top: 90px;
+	padding-bottom: 20px;
+	background-color: white;
+	color: black;
+	width: 980px;
+	margin-left: -100px;
+
+}
+
+#first-element p{
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 80px;
+}
+
+a{
+	color: white;
+}
+
+
 .footer p {
 	width: 268px;
 	margin-top: 90px;
@@ -212,6 +249,10 @@ body {
 
 .white-text {
 	color: #FFF;
+}
+
+.black-text {
+	color: #000;
 }
 
 .footer .nav {

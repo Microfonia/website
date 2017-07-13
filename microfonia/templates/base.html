@@ -33,7 +33,7 @@
 		</div>
 
 		<div>
-			<h1 class="pagetitle-font aligncenter page-title white-text">{% block headertitle %}NOME DA PAGINA{% endblock headertitle %}</h1>
+			<h1 class="pagetitle-font aligncenter page-title white-text">{% block headertitle %}{% endblock headertitle %}</h1>
 		</div>
 
 	</header>
@@ -46,32 +46,30 @@
 				<hr class="grey-line">
 				<li><a class="default-link" href="{% url 'series' %}">SÉRIES</a></li>
 				<hr class="grey-line">
-				<li>QUEM SOMOS</li>
+				<li><a class="default-link" href="{% url 'quemsomos' %}">QUEM SOMOS</a></li>
 				<hr class="grey-line">
-				<li>CONTATO</li>
+				<li><a class="default-link" href="{% url 'contato' %}">CONTATO</a></li>
 			</ul>
 		</nav>
 	</div>
 
 
-
 	<div id="feed">
-		<div>
-			{% block conteudo %}{% endblock conteudo%}
-		</div>
-
-		<footer class="footer black-background">
-			<div class="nav">
-				<h3 class="white-text title-font">ACESSE:</h3>
-				<div class="footerlinks">
-					<a id="youtube" class="access-links" target="_blank" title="Nosso canal do Youtube" href="https://www.youtube.com/channel/UCyGRwgmcx5rLXjxl2xJcUZA"><img alt="follow me on youtube" src="https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png" border=0></a>
-					<a id="facebook" class="access-links" target="_blank" title="Nossa página do Facebook" href="https://www.facebook.com/microfoniaproducoes/?hc_ref=SEARCH&fref=nf"><img alt="follow me on facebook" src="https://i0.wp.com/compratuoferta.com/images/facebook-blanco-01.png" border=0></a>
-				</div>
-				
-			</div>
-			<p class="white-text button-font">&copy; 2016 Microfonia Produções</p>
-		<footer>
+		{% block conteudo %}{% endblock conteudo%}
 	</div>
+	
+	<footer class="footer black-background">
+		<div class="nav">
+			<h3 class="white-text title-font">ACESSE:</h3>
+			<div class="footerlinks">
+				<a id="youtube" class="access-links" target="_blank" title="Nosso canal do Youtube" href="https://www.youtube.com/channel/UCyGRwgmcx5rLXjxl2xJcUZA"><img alt="follow me on youtube" src="https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png" border=0></a>
+				<a id="facebook" class="access-links" target="_blank" title="Nossa página do Facebook" href="https://www.facebook.com/microfoniaproducoes/?hc_ref=SEARCH&fref=nf"><img alt="follow me on facebook" src="https://i0.wp.com/compratuoferta.com/images/facebook-blanco-01.png" border=0></a>
+			</div>
+			
+		</div>
+		<p class="white-text button-font">&copy; 2016 Microfonia Produções</p>
+	</footer>
+
 </body>
 
 <script src="{% static 'microfonia/jquery/jquery-3.2.1.min.js' %}"></script>

@@ -22,3 +22,8 @@ def descricao(request, seriename=None, episodenum=None, seasonnum=None):
 
 def home(request):
 	return render(request, 'home.html')
+
+def series(request):
+
+	all_series = Serie.objects.all()
+	return render(request, 'series.html', {'all_series': all_series})

@@ -2,6 +2,8 @@
 
 {% load static %}
 
+{% block title %} - Séries{% endblock title %}
+
 {% block css %} <link rel="stylesheet" href="{% static 'microfonia/series.css' %}" type="text/css" charset="utf-8"> {% endblock css %}
 
 {% block headertitle %}SÉRIES{% endblock headertitle %}
@@ -15,5 +17,5 @@
 	</div>
 
 	{% endfor %}
-	
+
 {% endblock content %}

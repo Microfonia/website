@@ -21,7 +21,7 @@ def videos(request, seriename=None):
 	return render(request, 'videos.html', context)
 
 
-def descricao(request):
+def episode(request):
 	first_epi = Episode.objects.first()
 
 	return render(request, 'descricao.html', { 'epi': first_epi })

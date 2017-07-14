@@ -1,3 +1,16 @@
+@font-face {
+	font-family: 'Lato', sans-serif;
+    src: url('/fonts/Lato-Light.ttf');
+    font-weight: 200;
+}
+
+@font-face {
+	font-family: 'Lato', sans-serif;
+    src: url('/fonts/Lato-Bold.ttf');
+    font-weight: 700;
+}
+
+
 body {
 	left: 0;
 	position: relative;
